@@ -1,38 +1,22 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea, Divider } from "@mui/material";
-import { Button } from '@mui/material';
+// src/CardUI.jsx
+import React from 'react';
+import { Button } from 'flowbite-react';
 
-
-const CardUI = ({ imgURL, country, description }) => {
+const CardUI = ({ imgURL, title, description }) => {
   return (
-    <Card className="flex flex-col h-full" sx={{ maxWidth: 345 }}>
-      <CardActionArea className="flex flex-col h-full">
-        <CardMedia
-          component="img"
-          height="140"
-          image={imgURL}
-          alt="trip image"
-          sx={{ objectFit: "cover" }}
-        />
-        <Divider />
-        <CardContent className="flex-grow flex flex-col">
-          <Typography gutterBottom variant="h5" component="div">
-            {country}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" className="mb-4">
-            {description}
-          </Typography>
-          <div className="mt-auto">
-            <Button variant="outlined" fullWidth>Show More</Button>
-          </div>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <div className="border rounded-lg p-4 shadow-lg">
+      <img src={imgURL} alt={title} className="w-full h-64 object-cover rounded-lg mb-4" />
+      <h3 className="text-2xl font-bold mb-2">{title}</h3>
+      <p>{description}</p>
+      <a href="">
+      <button
+        className="w-full mt-3 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+      >
+        Read More
+      </button>
+      </a>
+    </div>
   );
 };
 
-export default CardUI
+export default CardUI;

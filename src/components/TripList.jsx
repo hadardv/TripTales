@@ -1,26 +1,15 @@
-import React from 'react'
-import { Card, CardContent, Typography, Grid, Box } from "@mui/material";
-import CardUI from './CardUI';
+// src/TripList.jsx
+import React from 'react';
+import Trip from './Trip';
 
 const TripList = ({ trips }) => {
   return (
-    <Box sx={{ flexGrow: 1, p: 3 }}>
-      <div style={{ textAlign: 'center' }}>
-    <Typography variant="h4" component="div" gutterBottom>Trips History</Typography>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
+      {trips.map(trip => (
+        <Trip key={trip.key} trip={trip} />
+      ))}
     </div>
-      <Grid container spacing={3}>
-        {trips.map((trip) => (
-          <Grid item xs={12} sm={6} md={4} key={trip.key}>
-            <CardUI
-              imgURL={trip.imgURL}
-              country={trip.country}
-              description={trip.description}
-            />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
   );
 };
 
-export default TripList
+export default TripList;

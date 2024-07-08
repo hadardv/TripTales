@@ -1,9 +1,15 @@
-import React from 'react'
+// src/Trip.jsx
+import React from 'react';
+import CardUI from './CardUI';
 
-const Trip = () => {
+const Trip = ({ trip }) => {
   return (
-    <div>Trip</div>
-  )
-}
+    <CardUI
+      imgURL={trip.imgURL}
+      title={trip.country}
+      description={trip.description}
+    />
+  );
+};
 
-export default Trip
+export default Trip;

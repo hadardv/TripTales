@@ -21,8 +21,8 @@ export default function HeroImage() {
           <h4 className="mb-3 text-2xl mt-10 font-bold text-sky-900">
             Capture and share your travel adventures with ease. Log your trips, add photos and notes, and relive your journeys anytime, anywhere.
           </h4>
-          <a href='./AddTrip'>
-          <Button variant="contained">Log A Trip</Button>
+          <a href='./TripHistory'>
+          <Button variant="contained">View Trips</Button>
           </a>
         </div>
       </div>

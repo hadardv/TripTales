@@ -16,7 +16,7 @@ import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 
 const pages = [
   { key: 1, name: "Trip History", path: "TripHistory" },
-  { key: 2, name: "New Trip", path: "AddTrip" },
+  { key: 2, name: "Wishlist", path: "Wishlist" },
 ];
 const settings = ["Profile", "Logout"];
 
