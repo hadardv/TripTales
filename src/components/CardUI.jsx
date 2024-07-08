@@ -7,7 +7,7 @@ import { CardActionArea, Divider } from "@mui/material";
 import { Button } from '@mui/material';
 
 
-const CardUI = ({ imgURL, name, description }) => {
+const CardUI = ({ imgURL, country, description }) => {
   return (
     <Card className="flex flex-col h-full" sx={{ maxWidth: 345 }}>
       <CardActionArea className="flex flex-col h-full">
@@ -21,7 +21,7 @@ const CardUI = ({ imgURL, name, description }) => {
         <Divider />
         <CardContent className="flex-grow flex flex-col">
           <Typography gutterBottom variant="h5" component="div">
-            {name}
+            {country}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="mb-4">
             {description}

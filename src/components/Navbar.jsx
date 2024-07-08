@@ -15,7 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 
 const pages = [
-  { key: 1, name: "Trip History", path: "Trips" },
+  { key: 1, name: "Trip History", path: "TripHistory" },
   { key: 2, name: "New Trip", path: "AddTrip" },
 ];
 const settings = ["Profile", "Logout"];

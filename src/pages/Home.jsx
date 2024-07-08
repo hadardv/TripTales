@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import HomeCards from '../components/HomeCards';
+import Myfooter from '../components/Myfooter';
 import "./home.css";
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     <Navbar />
     <Hero />
     <HomeCards />
+    <Myfooter />
     </>
   );
 }
